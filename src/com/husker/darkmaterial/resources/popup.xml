@@ -12,8 +12,8 @@
                 <decoration>
                     <WebShape round="2" />
                     <WebShadow type="outer" width="2" />
-                    <LineBorder color="40,40,40" />
-                    <ColorBackground color="80,80,80" />
+                    <LineBorder color="20,20,20" />
+                    <ColorBackground color="68,68,68" />
                 </decoration>
                 <decoration states="unix">
                     <WebShape round="0" />

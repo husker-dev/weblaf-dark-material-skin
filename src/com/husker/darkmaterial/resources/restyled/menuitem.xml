@@ -1,0 +1,39 @@
+<skin xmlns="http://weblookandfeel.com/XmlSkin">
+
+    <!-- com.alee.laf.menu.WebMenuItem -->
+
+    <!-- Menu item -->
+    <style type="menuitem">
+        <component>
+            <opaque>false</opaque>
+        </component>
+        <painter>
+            <decorations>
+                <decoration>
+                    <WebShape round="0" />
+                    <MenuItemLayout padding="5,10,5,8" iconTextGap="6" textAcceleratorGap="20">
+                        <ButtonIcon constraints="icon" />
+                        <ButtonText constraints="text" color="210,210,210" />
+                        <RoundRectangle constraints="accelerator" round="4" opacity="0">
+                            <ColorBackground color="80,80,80" />
+                        </RoundRectangle>
+                        <AcceleratorText constraints="accelerator" padding="0,4,0,4" color="220,220,220" />
+                    </MenuItemLayout>
+                </decoration>
+                <decoration states="selected">
+					<ColorBackground color="55,55,55"/>
+                    <MenuItemLayout>
+                        <RoundRectangle opacity="1" />
+                    </MenuItemLayout>
+                </decoration>
+                <decoration states="disabled">
+                    <MenuItemLayout>
+                        <ButtonText color="160,160,160" />
+                        <AcceleratorText color="160,160,160" />
+                    </MenuItemLayout>
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+</skin>

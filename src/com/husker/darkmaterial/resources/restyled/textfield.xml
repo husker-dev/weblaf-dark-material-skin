@@ -1,0 +1,71 @@
+<skin xmlns="http://weblookandfeel.com/XmlSkin">
+
+    <!-- com.alee.laf.text.WebTextField -->
+
+    <!-- Text field -->
+    <style type="textfield" padding="2,6,2,4">
+        <component>
+            <opaque>false</opaque>
+            <foreground>210,210,210</foreground>
+            <selectedTextColor>210,210,210</selectedTextColor>
+            <selectionColor>40,40,40</selectionColor>
+            <caretColor>white</caretColor>
+        </component>
+        <painter>
+            <inputPromptHorizontalPosition>10</inputPromptHorizontalPosition>
+            <inputPromptVerticalPosition>1</inputPromptVerticalPosition>
+            <inputPromptForeground>190,190,190</inputPromptForeground>
+            <inputPromptOnlyWhenEditable>true</inputPromptOnlyWhenEditable>
+            <hideInputPromptOnFocus>false</hideInputPromptOnFocus>
+            <decorations>
+                <decoration>
+                    <WebShape round="6" />
+                    <WebShadow type="outer" width="3" opacity="0"/>
+                    <LineBorder color="45,45,45" />
+                    <ColorBackground color="85,85,85" />
+                </decoration>
+                <decoration states="focused">
+                    <LineBorder color="35,35,35" />
+                </decoration>
+                <decoration states="disabled">
+                    <WebShadow type="outer" opacity="0" />
+                    <LineBorder color="68,72,74" />
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+    <!-- Non-opaque text field -->
+    <style type="textfield" id="non-opaque">
+        <component>
+            <opaque>false</opaque>
+        </component>
+        <painter>
+            <decorations overwrite="true">
+                <decoration>
+                    <BoundsShape />
+                    <ColorBackground color="106,110,112" />
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+    <!-- Transparent text field -->
+    <style type="textfield" id="transparent" extends="non-opaque">
+        <painter>
+            <decorations overwrite="true" />
+        </painter>
+    </style>
+
+    <!-- Text field without focus decoration -->
+    <style type="textfield" id="nofocus">
+        <painter>
+            <decorations>
+                <decoration states="focused">
+                    <LineBorder color="black" />
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+</skin>

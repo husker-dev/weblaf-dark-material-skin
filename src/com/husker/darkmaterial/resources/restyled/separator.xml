@@ -1,0 +1,39 @@
+<skin xmlns="http://weblookandfeel.com/XmlSkin">
+
+    <!-- com.alee.laf.separator.WebSeparator -->
+
+    <!-- Separator -->
+    <style type="separator">
+        <painter>
+            <decorations>
+                <decoration>
+                    <SeparatorStripes>
+
+                        <Stripe>
+                            <color fraction="0.0">45,45,45,5</color>
+                            <color fraction="0.3">45,45,45</color>
+							<color fraction="0.7">45,45,45</color>
+                            <color fraction="1.0">45,45,45,5</color>
+                        </Stripe>
+
+                    </SeparatorStripes>
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+    <!-- Horizontal dark separator -->
+    <style type="separator" id="horizontal">
+        <component>
+            <orientation>0</orientation>
+        </component>
+    </style>
+
+    <!-- Vertical dark separator -->
+    <style type="separator" id="vertical">
+        <component>
+            <orientation>1</orientation>
+        </component>
+    </style>
+
+</skin>

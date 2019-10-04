@@ -1,0 +1,30 @@
+{
+  "style": {
+    "type": "label",
+    "painter": {
+      "decorations": [
+        {
+
+        }
+      ]
+    }
+  }
+}
+
+<style type="label">
+<painter>
+<decorations>
+<decoration>
+<LabelLayout>
+<LabelIcon constraints="icon" />
+<LabelText constraints="text" color="245,245,245" />
+</LabelLayout>
+</decoration>
+<decoration states="disabled">
+<LabelLayout>
+<LabelText color="180,180,180" />
+</LabelLayout>
+</decoration>
+</decorations>
+</painter>
+</style>

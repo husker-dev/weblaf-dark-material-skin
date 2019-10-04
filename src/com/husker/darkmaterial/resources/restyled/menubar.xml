@@ -1,0 +1,27 @@
+<skin xmlns="http://weblookandfeel.com/XmlSkin">
+
+    <!-- com.alee.laf.menu.WebMenuBar -->
+
+    <!-- Menu bar -->
+    <style type="menubar">
+        <painter>
+            <decorations>
+                <decoration>
+                    <WebShape sides="0,0,1,0" />
+                    <LineBorder color="40,40,40" />
+                    <ColorBackground color="65,65,65"/>
+                </decoration>
+            </decorations>
+        </painter>
+    </style>
+
+    <!-- Undecorated menu bar -->
+    <style type="menubar" id="undecorated">
+        <painter>
+            <decorations>
+                <decoration visible="false" />
+            </decorations>
+        </painter>
+    </style>
+
+</skin>

@@ -1,38 +1,35 @@
 <skin xmlns="http://weblookandfeel.com/XmlSkin">
 
-    <!-- com.alee.laf.radiobutton.WebRadioButton -->
+    <!-- com.alee.laf.checkbox.WebCheckBox -->
 
-    <!-- Radio button -->
-    <style type="radiobutton">
+    <!-- Checkbox -->
+    <style type="checkbox">
         <painter>
             <decorations>
                 <decoration>
                     <ButtonLayout>
                         <SimpleButtonIcon constraints="icon" />
-                        <ButtonText constraints="text" color="245,245,245" />
+                        <ButtonText constraints="text" color="210,210,210" />
                     </ButtonLayout>
                 </decoration>
                 <decoration states="disabled">
                     <ButtonLayout>
-                        <ButtonText color="180,180,180" />
+                        <ButtonText color="160,160,160" />
                     </ButtonLayout>
                 </decoration>
             </decorations>
 
-            <!-- Radio state painter -->
+            <!-- Check state painter -->
             <checkStatePainter>
                 <decorations>
                     <decoration size="17,17">
-                        <EllipseShape />
+                        <WebShape round="6" />
                         <WebShadow type="outer" width="2" />
-                        <LineBorder color="20,20,20" />
-                        <GradientBackground type="radial" from="0.5,0.5" to="2,0.5">
-                            <color>77,81,83</color>
-                            <color>black</color>
-                        </GradientBackground>
+                        <LineBorder color="30,30,30" />
+                        <ColorBackground color="60,60,60"/>
                     </decoration>
                     <decoration states="checked">
-                        <RadioIcon padding="2" leftColor="255,255,255,225" rightColor="255,255,255,235" />
+                        <CheckIcon bounds="margin" stroke="basic;2" color="210,210,210" />
                     </decoration>
                     <decoration states="focused">
                         <LineBorder color="black" />
@@ -43,7 +40,7 @@
                         <ColorBackground color="80,80,80" />
                     </decoration>
                     <decoration states="disabled,checked">
-                        <RadioIcon padding="2" leftColor="120,120,120" rightColor="130,130,130" />
+                        <CheckIcon bounds="margin" color="130,130,130" />
                     </decoration>
                 </decorations>
             </checkStatePainter>
@@ -51,8 +48,8 @@
         </painter>
     </style>
 
-    <!-- Radio button supporting styled text -->
-    <style type="radiobutton" id="styled">
+    <!-- Checkbox supporting styled text -->
+    <style type="checkbox" id="styled">
         <painter>
             <decorations>
                 <decoration>
@@ -69,8 +66,8 @@
         </painter>
     </style>
 
-    <!-- Link-like radio button -->
-    <style type="radiobutton" id="link" extends="styled">
+    <!-- Link-like checkbox -->
+    <style type="checkbox" id="link" extends="styled">
         <painter>
             <decorations>
                 <decoration cursor="hand" />

@@ -1,40 +1,30 @@
 <skin xmlns="http://weblookandfeel.com/XmlSkin">
 
-    <!-- com.alee.laf.button.WebToggleButton -->
+    <!-- com.alee.laf.button.WebButton -->
 
-    <!-- Toggle button -->
-    <style type="togglebutton" padding="2,4,2,4">
+    <!-- Button -->
+    <style type="button" padding="2,4,2,4">
         <painter>
             <decorations>
                 <decoration>
-                    <WebShape round="3" />
-                    <WebShadow type="outer" width="2" />
-                    <LineBorder color="20,20,20" />
-                    <GradientBackground>
-                        <color>111,115,117</color>
-                        <color>77,81,83</color>
-                    </GradientBackground>
+                    <WebShape round="6" />
+					<WebShadow type="outer" width="2" />
+                    <LineBorder color="40,40,40" />
+					<ColorBackground color="85,85,85"/>
                     <ButtonLayout>
                         <ButtonIcon constraints="icon" />
-                        <ButtonText constraints="text" color="245,245,245" />
+                        <ButtonText constraints="text" color="210,210,210" />
                     </ButtonLayout>
                 </decoration>
-                <decoration states="selected">
-                    <WebShadow type="outer" opacity="0" />
-                    <WebShadow type="inner" opacity="1" width="6" />
-                    <ColorBackground color="77,81,83" />
-                </decoration>
                 <decoration states="focused">
-                    <LineBorder color="black" />
+                    <LineBorder color="10,10,10" />
                 </decoration>
                 <decoration states="pressed">
-                    <WebShadow type="outer" opacity="0" />
-                    <WebShadow type="inner" opacity="1" width="6" />
-                    <ColorBackground color="57,61,63" />
+                    <ColorBackground color="65,65,65" />
                 </decoration>
                 <decoration states="disabled">
-                    <WebShadow type="outer" opacity="0" />
-                    <LineBorder color="68,72,74" />
+                    <LineBorder color="60,60,60" />
+					<ColorBackground color="70,70,70"/>
                     <ButtonLayout>
                         <ButtonText color="180,180,180" />
                     </ButtonLayout>
@@ -43,8 +33,8 @@
         </painter>
     </style>
 
-    <!-- Toggle button supporting styled text -->
-    <style type="togglebutton" id="styled">
+    <!-- Button supporting styled text -->
+    <style type="button" id="styled">
         <painter>
             <decorations>
                 <decoration>
@@ -61,8 +51,8 @@
         </painter>
     </style>
 
-    <!-- Icon-only toggle button -->
-    <style type="togglebutton" id="icon" padding="2">
+    <!-- Icon-only button -->
+    <style type="button" id="icon" padding="2">
         <painter>
             <decorations>
                 <decoration>
@@ -72,8 +62,8 @@
         </painter>
     </style>
 
-    <!-- Hover-decorated-only toggle button -->
-    <style type="togglebutton" id="hover">
+    <!-- Hover-decorated-only button -->
+    <style type="button" id="hover">
         <painter>
             <decorations>
                 <decoration opacity="0" />
@@ -82,13 +72,12 @@
                 </decoration>
                 <decoration states="enabled,hover" opacity="1" />
                 <decoration states="enabled,pressed" opacity="1" />
-                <decoration states="selected" opacity="1" />
             </decorations>
         </painter>
     </style>
 
-    <!-- Icon-only and hover-decorated-only toggle button -->
-    <style type="togglebutton" id="icon-hover" extends="icon">
+    <!-- Icon-only and hover-decorated-only button -->
+    <style type="button" id="icon-hover" extends="icon">
         <painter>
             <decorations>
                 <decoration opacity="0" />
@@ -97,13 +86,12 @@
                 </decoration>
                 <decoration states="enabled,hover" opacity="1" />
                 <decoration states="enabled,pressed" opacity="1" />
-                <decoration states="selected" opacity="1" />
             </decorations>
         </painter>
     </style>
 
-    <!-- Undecorated toggle button -->
-    <style type="togglebutton" id="undecorated" padding="0">
+    <!-- Undecorated button -->
+    <style type="button" id="undecorated" padding="0">
         <painter>
             <decorations>
                 <decoration visible="false" />

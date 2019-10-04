@@ -1,52 +1,51 @@
 <skin xmlns="http://weblookandfeel.com/XmlSkin">
 
-    <!-- Skin settings -->
-    <id>husker.darkmaterial.skin</id>
-    <class>com.husker.darkmaterial.DarkMaterialSkin</class>
+    <id>hukser.darkmaterial.skin</id>
+    <class>main.darkmaterial.DarkMaterialSkin</class>
     <supportedSystems>all</supportedSystems>
-
-    <!-- Skin information -->
-    <title>Dark Material skin</title>
-    <description>Dark Material WebLaF skin</description>
+	
+    <title>Dark Material Skin</title>
+    <description>Dark material WebLaF skin</description>
     <author>Husker</author>
 	
-	<iconSet>com.alee.iconset.DarkIconSet</iconSet>
-	
+	<!-- Icon sets -->
+    <iconSet>com.alee.iconset.DarkIconSet</iconSet>
 
     <!-- Styles placed in strict initialization order -->
+
     <include>resources/canvas.xml</include>
     <include>resources/image.xml</include>
-    <include>resources/label.xml</include>
+    <include>resources/restyled/label.xml</include>
     <include>resources/styledlabel.xml</include>
     <include>resources/tooltip.xml</include>
     <include>resources/link.xml</include>
-    <include>resources/button.xml</include>
+    <include>resources/restyled/button.xml</include>
     <include>resources/splitbutton.xml</include>
-    <include>resources/togglebutton.xml</include>
-    <include>resources/checkbox.xml</include>
+    <include>resources/restyled/togglebutton.xml</include>
+    <include>resources/restyled/checkbox.xml</include>
     <include>resources/radiobutton.xml</include>
     <include>resources/tristatecheckbox.xml</include>
-    <include>resources/panel.xml</include>
+    <include>resources/restyled/panel.xml</include>
     <include>resources/grouppane.xml</include>
     <include>resources/innerpopup.xml</include>
-    <include>resources/scrollbar.xml</include>
+    <include>resources/restyled/scrollbar.xml</include>
     <include>resources/viewport.xml</include>
-    <include>resources/scrollpane.xml</include>
+    <include>resources/restyled/scrollpane.xml</include>
     <include>resources/progressbar.xml</include>
     <include>resources/splitpanedivider.xml</include>
     <include>resources/splitpane.xml</include>
     <include>resources/multisplitpanedivider.xml</include>
     <include>resources/multisplitpane.xml</include>
-    <include>resources/separator.xml</include>
+    <include>resources/restyled/separator.xml</include>
     <include>resources/slider.xml</include>
-    <include>resources/menubar.xml</include>
-    <include>resources/menu.xml</include>
-    <include>resources/menuitem.xml</include>
+    <include>resources/restyled/menubar.xml</include>
+    <include>resources/restyled/menu.xml</include>
+    <include>resources/restyled/menuitem.xml</include>
     <include>resources/checkboxmenuitem.xml</include>
     <include>resources/radiobuttonmenuitem.xml</include>
     <include>resources/popupmenu.xml</include>
     <include>resources/popupmenuseparator.xml</include>
-    <include>resources/textfield.xml</include>
+    <include>resources/restyled/textfield.xml</include>
     <include>resources/passwordfield.xml</include>
     <include>resources/formattedtextfield.xml</include>
     <include>resources/pathfield.xml</include>
@@ -56,9 +55,9 @@
     <include>resources/textarea.xml</include>
     <include>resources/editorpane.xml</include>
     <include>resources/textpane.xml</include>
-    <include>resources/list.xml</include>
+    <include>resources/restyled/list.xml</include>
     <include>resources/filelist.xml</include>
-    <include>resources/combobox.xml</include>
+    <include>resources/restyled/combobox.xml</include>
     <include>resources/rootpane.xml</include>
     <include>resources/popover.xml</include>
     <include>resources/calendar.xml</include>
@@ -70,7 +69,7 @@
     <include>resources/extree.xml</include>
     <include>resources/asynctree.xml</include>
     <include>resources/filetree.xml</include>
-    <include>resources/toolbar.xml</include>
+    <include>resources/restyled/toolbar.xml</include>
     <include>resources/toolbarseparator.xml</include>
     <include>resources/statusbar.xml</include>
     <include>resources/memorybar.xml</include>
@@ -96,17 +95,16 @@
     <include>resources/checkboxtree.xml</include>
     <include>resources/excheckboxtree.xml</include>
     <include>resources/filedrop.xml</include>
-    <include>resources/collapsiblepane.xml</include>
+    <include>resources/restyled/collapsiblepane.xml</include>
     <include>resources/accordion.xml</include>
     <include>resources/syntaxarea.xml</include>
     <include>resources/syntaxpanel.xml</include>
     <include>resources/componentpane.xml</include>
     <include>resources/directorychooser.xml</include>
-    <include>resources/dockablepane.xml</include>
-    <include>resources/dockableframe.xml</include>
+    <include>resources/restyled/dockablepane.xml</include>
+    <include>resources/restyled/dockableframe.xml</include>
     <include>resources/interfacetree.xml</include>
     <include>resources/interfaceinspector.xml</include>
-    <include>resources/ninepatcheditor.xml</include>
     <include>resources/styleeditor.xml</include>
     <include>resources/breadcrumb.xml</include>
 </skin>
